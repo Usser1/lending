@@ -1,0 +1,932 @@
+body {
+    margin: 0;
+    margin-top: -35px;
+	min-width:1000px;
+	
+     }
+
+	 
+.icon {
+	z-index:999999;
+	position: fixed; 
+	width:35px;
+	height:35px;
+	border-radius:20px;
+	padding:0.2em;
+	background-color:#d2004f;
+	cursor:pointer;
+	margin:50px 100px ;
+}
+
+.hamburger{
+	width:20px;
+	height:2px;
+	background:#ffffff;
+	position:absolute;
+	margin:17px 17px ;
+	margin-bottom:4px;
+	transform:translate(-50%, -50%);
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+	transition: .5s;
+	line-height: 35px;
+}
+
+.hamburger:before,
+.hamburger:after
+{
+
+	content:'';
+	position:absolute;
+	width:20px;
+	height:2px;
+	background:#ffffff;
+	box-shadow:0 0px 5px rgba(0,0,0,.2);
+	transition:.5s;
+}
+
+
+.hamburger:before{
+	top:-6px;
+}
+
+.hamburger:after{
+	top:6px;
+}
+
+.icon.active .hamburger
+{
+	background: rgba(0,0,0,0);
+	box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+.icon.active .hamburger:before{
+	top:0;
+	transform:rotate(45deg);
+	
+}
+
+.icon.active .hamburger:after{
+	top:0;
+ transform:rotate(135deg);
+}
+	 
+#header {
+    background: #dfd6d6;
+    position:fixed;
+    height:65px;
+	width:1400px;
+    font-family: Avenir;
+	z-index:10;
+        }
+	
+
+ul {
+    display: block;
+    margin: -5px;
+    padding: 0;
+    list-style: none;
+	height: 65px;
+	
+	/*background:#dfd6d6;*/
+		  
+	}
+	
+ ul a{
+    white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	 
+    display:block;
+
+}	
+
+.menu >li {
+ 
+    float: left;
+    position: relative;
+	margin-left:15px;
+             }
+
+.menu li a {
+	font-family: Arial;
+	font-weight:normal;
+	font-size: 14px;
+    display: block;
+    padding: 20px;
+    color: #272727;
+	text-align: left;
+	margin-top:1px;
+    text-decoration: none;
+	margin-left:-30px;
+	
+	}
+	 
+
+	 
+.menu li :hover{
+    background-color:#ffffff;
+    height:11px; 
+	}
+	
+
+
+.menu ul{
+	position:absolute;
+	left:-9999px;
+	opacity:0;
+margin-top:0px;
+	 
+
+
+}
+
+.menu li:hover ul{
+	left:0;
+	opacity:1;	
+	width:150px;
+margin-left:0px;	
+
+}	
+
+
+.menu li ul a:hover{
+	height:2px;
+	width:150px;
+	border-bottom:1px solid #dfd6d6;
+	background-color:#dfd6d6;
+
+}
+
+
+.menu ul a{
+	  background-color:#ffffff;
+	  border-bottom: 0px solid #dfd6d6;
+	  box-shadow: 0px 0px 5px 0px #272727;
+	  height:2px;
+	  width:150px;
+	margin-top:-3px;
+
+}
+
+
+
+.catalog {
+	font-family:Arial;
+    font-weight:600;
+	color:d2004f;
+	font-size:14px;
+	cursor:pointer;
+	margin-top: 20px;
+	margin-left:200px;
+    margin-right:25px;
+
+}
+
+.catalog img{
+	position:absolute;
+	left:-9999px;
+	opacity:0;
+}
+
+.catalog:hover img{
+	
+	left:0;
+	opacity:1;	
+	margin-left:190px;
+	margin-top:10px;
+}
+
+.networks {
+	margin-left:700px;
+	margin-top:-43px;
+}
+
+
+#header2{
+height:70px;
+background:url("/home/sysadmin/lending/image/logotip.png")no-repeat ;
+background-position:left 200px center;
+background-color:#ffffff;
+margin-top:70px;
+
+         }
+
+form{
+    margin-top:-66px;
+    margin-left:450px;	
+}
+
+input,button {
+	border:none;
+	outline:none;
+    border-bottom: 1px solid #dfd6d6;
+	
+	
+}
+
+input {
+  width: 150px;
+padding-left: 15px;
+
+
+}
+
+button{
+	 height: 26px;
+  width: 26px;
+  position: relative;
+  top: 12px;
+  right: 160px;
+  background: url("/home/sysadmin/lending/image/search.png") no-repeat 3px -1px ;
+  cursor: pointer;
+  border-bottom:none;
+  
+  
+}
+
+
+
+
+		 
+.support{
+	    color: black;
+   
+   border-bottom:none;
+    line-height: 90px;
+    padding-left: 2rem;
+	margin-left:690px;
+	margin-top:300px;
+    font-size: 17px;
+background: url("/home/sysadmin/lending/image/support.png")  left top -1px no-repeat;
+z-index:10;
+}		
+		
+
+#hr{
+margin-top:-18px;
+border-top: 7px solid #d2004f;
+
+}
+
+
+#slaid1 {
+
+background-repeat: no-repeat ;
+/*  height: calc(100vh - 69px - 5px - 48px);*/
+    background-image: url("/home/sysadmin/lending/image/1.png");
+    background-attachment: scroll;
+    background-position: top 0px center;
+	height:690px;
+
+   /* background-size: auto calc(100vh - 69px - 5px - 38px);*/
+
+}
+
+
+
+#slaid2 {
+background-image:url(2.png");
+background-position:  center;
+margin-bottom:0px;
+margin-top: -30px;
+
+height: 1116px;
+
+ width:100%;
+}
+
+#slaid3 {
+
+background-image:url("/K:/Стажер9/Новая папка/lending/image/4.png");
+/*background-image:url("/Users/стажер9/Desktop/Новая папка/lending/image/4/question.png");*/
+background-position:  center;
+height: 541px;
+width:100%;
+margin-bottom:0px;
+margin-top: -18px;
+}
+
+#slaid3 img{
+	
+	opacity:0;
+}
+#slaid3 .pulse{
+	
+	margin-left:755px;
+	margin-top:60px;
+}
+#slaid3 .pulse1{
+margin-left:975px;
+margin-top:40px;
+}
+
+#slaid3 .pulse2{
+	margin-left:765px;
+	margin-top:80px;
+}
+
+
+
+
+#slaid4 {
+
+background-image:url("/K:/Стажер9/Новая папка/lending/image/5.png");
+background-size:auto;
+background-position:  center;
+height: 420px;
+margin-bottom:40px;
+margin-top: -40px;
+width:100%;
+}
+
+#slaid5 {
+
+background-color:#ffffff;
+background-size:auto;
+background-position:  center;
+height: 800px;
+margin-bottom:0px;
+margin-top: -40px;
+width:100%;
+}
+
+#slaid6 {
+
+background-image:url("/K:/Стажер9/Новая папка/lending/image/6.png");
+background-size:auto;
+background-position:  center;
+height: 370px;
+margin-bottom:0px;
+margin-top: -40px;
+width:100%;
+}
+
+#slaid7{
+	
+	background-image: url("K:/Стажер9/Новая папка/lending/image/8/8.png");
+	background-size:auto;
+background-position:  center;
+height: 1000px;
+margin-bottom:10px;
+margin-top: 0px;
+width:100%;
+  position:relative;
+}
+
+
+
+
+
+
+#slaid8 {
+
+background-image:url("/K:/Стажер9/Новая папка/lending/image/8.png");
+background-size:auto;
+background-position:  center;
+height: 832px;
+margin-bottom:10px;
+margin-top: -40px;
+width:100%;
+  position:relative;
+}
+
+
+#slaid10 {
+
+
+	background-size:auto;
+background-position:  center;
+height: 1000px;
+margin-bottom:10px;
+margin-top: 0px;
+width:100%;
+  position:relative;
+}
+
+.text{
+	
+	font-size:60px;
+	color:d2004f;
+	font-weight: 580;
+    text-align:center;
+	font-family:Arial;
+}
+
+.privilege {
+color: white;
+font-size:25px;
+font-weight: 700;
+border-radius: 20px;
+width:350px;
+height:85px;
+background:#d2004f;
+border:none;	
+position:absolute;
+top:690px;
+left:750px;	
+outline:none;
+}
+
+.button span {
+	
+color:#ffffff;
+	
+}
+#footer{
+	width:100%;
+height:350px;
+background: #dfd6d6;
+margin-bottom:-40px;
+margin-top: -19px;
+
+}
+
+
+
+
+
+
+
+
+/*.input{
+	
+	 margin-left:950px;
+	 width:180px;
+    height:25px;
+    border-radius:15px;
+    border:#c9c9c9 solid 1px;
+margin-top:30px;
+  background: #ffffff;
+  font: 13px Tahoma, Arial, sans-serif;
+  
+  outline: none;
+ /* background-image:url("/Users/стажер9/Desktop/Новая папка/lending/image/search.png") ;
+    }*/
+/* .submit {
+
+   
+   
+    border: none; /* Убираем рамку 
+	
+outline:none;
+    height: 17px;
+    position: absolute;
+    right: 225px;
+    top: 85px;
+    width: 22px;
+    background: url("/K:/Стажер9/Новая папка/lending/image/search.png") no-repeat 3px -1px ; /* Параметры фона 
+}
+*/
+
+
+.toggle {
+
+display: block;
+position: relative;
+overflow: hidden;
+margin: 0;
+padding: 0;
+width: 108px;
+height: 96px;
+font-size: 0;
+text-indent: -9999px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+box-shadow: none;
+border-radius: none;
+border: none;
+cursor: pointer;
+-webkit-transition: background 0.3s;
+transition: background 0.3s;
+}
+ 
+.toggle:focus {
+outline: none;
+
+}
+
+.sidebar{
+	margin-top:48px;
+	position:fixed;
+	top:0;
+	left:-320px;
+	background:#ffffff;
+	z-index:999999;
+	height:100%;
+	transition:.3s;
+} 
+.active{
+	 left:0;
+ }
+.sidebar ul{
+	
+	margin-top:140px;
+	padding: 20px 0;
+} 
+
+.sidebar ul li{
+	margin-top:10px;
+	list-style:none;
+}
+
+.sidebar ul li a{
+	font-family:Arial;
+	font-size:16px;
+	font-weight:600;
+	padding:10px 50px;
+	color:#272727;
+	display:block;
+	text-decoration: none;
+
+}
+
+.sidebar ul li a:hover{
+	color:#A9A9A9;
+	
+}
+
+ 
+ 
+
+
+#slider { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 10px;
+}
+
+#slider{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+	float: left;
+}
+
+#slides .image{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	line-height: 0;
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#overflow{ /*сркывает все, что находится за пределами этого блока*/
+	width: 100%;
+	overflow: hidden;
+}
+
+article img{ /*размер изображений слайдера*/
+	
+}
+
+#desktop:checked ~ #slider{ /*размер всего слайдера*/
+	max-width: 960px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#switch1:checked ~ #controls label:nth-child(5), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3),
+#switch5:checked ~ #controls label:nth-child(4){
+	background: url("K:/Стажер9/Новая папка/lending/image/6/left.png") no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: -80px 0 0 0; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(5),
+#switch5:checked ~ #controls label:nth-child(1){
+	background: url("K:/Стажер9/Новая папка/lending/image/6/right.png") no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: -80px -25px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+	cursor: pointer;
+}
+
+
+
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+	margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+	margin-left: -400%;
+}
+
+#controls{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+#active label{ /*стиль отдельного переключателя*/
+	border-radius: 10px; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 15px;
+	height: 15px;
+	background: #bbb;
+}
+
+#active{ /*расположение блока с переключателями*/
+	margin: 23% 0 0;
+	text-align: center;
+}
+
+#active label:hover{ /*поведение чекбокса при наведении*/
+	background: #76c8ff;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
+}
+
+
+
+#controls label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#controls label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+
+#slaid5 input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+
+
+#sl { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 210px;
+}
+
+#sl{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#sls article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+	float: left;
+}
+
+#sls .picture{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+	line-height: 0;
+	margin-top:100px;
+}
+
+
+
+
+
+#des:checked ~ #sl{ /*размер всего слайдера*/
+	max-width: 960px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#sw1:checked ~ #control label:nth-child(3), 
+#sw2:checked ~ #control label:nth-child(1),
+#sw3:checked ~ #control label:nth-child(2){
+	background: url("K:/Стажер9/Новая папка/lending/image/8/left.png") no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: -80px 0 0 0; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#sw1:checked ~ #control label:nth-child(2), 
+#sw2:checked ~ #control label:nth-child(3),
+#sw3:checked ~ #control label:nth-child(1){
+	background: url("K:/Стажер9/Новая папка/lending/image/8/right.png") no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: -80px -25px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+
+
+
+
+/*позиция изображения при активации переключателя*/
+#sw1:checked ~ #sls .picture{
+	margin-left: 0;
+}
+
+#sw2:checked ~ #sls .picture{
+	margin-left: -100%;
+}
+
+#sw3:checked ~ #sls .picture{
+	margin-left: -200%;
+}
+
+
+
+#control{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+
+
+
+/*цвет активного лейбла при активации чекбокса*/
+#sw1:checked ~ #active label:nth-child(1),
+#sw2:checked ~ #active label:nth-child(2),
+#sw3:checked ~ #active label:nth-child(3){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
+}
+
+#sls .picture{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#control label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#control label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+
+#slaid7 input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+
+
+
+
+
+
+#s { /*положение слайдера*/
+    position: relative;
+	text-align: center;
+    top: 210px;
+}
+
+#s{ /*центровка слайдера*/
+	margin: 0 auto;
+}
+
+#sli article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+	float: left;
+}
+
+#sli .pic{ /*устанавливает общий размер блока с изображениями*/
+	max-width: 250%;
+	line-height: 0;
+	margin-top:100px;
+}
+
+
+
+
+
+#de:checked ~ #s{ /*размер всего слайдера*/
+	max-width: 460px; /*максимальнная длинна*/
+}
+
+/*настройка переключения и положения для левой стрелки*/
+/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
+#swi1:checked ~ #contr label:nth-child(3), 
+#swi2:checked ~ #contr label:nth-child(1),
+#swi3:checked ~ #contr label:nth-child(2){
+	background: url("K:/Стажер9/Новая папка/lending/image/8/left.png") no-repeat; /*заливка фона картинкой без повторений*/
+	float: left;
+	margin: -80px 0 0 0; /*сдвиг влево*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+/*настройка переключения и положения для правой стрелки*/
+#swi1:checked ~ #contr label:nth-child(2), 
+#swi2:checked ~ #contr label:nth-child(3),
+#swi3:checked ~ #contr label:nth-child(1){
+	background: url("K:/Стажер9/Новая папка/lending/image/8/right.png") no-repeat; /*заливка фона картинкой без повторений*/
+	float: right;
+	margin: -80px -25px 0 0; /*сдвиг вправо*/
+	display: block;
+	height: 68px;
+	width: 68px;
+}
+
+
+
+
+
+/*позиция изображения при активации переключателя*/
+#swi1:checked ~ #sli .pic{
+	margin-left: 0;
+}
+
+#swi2:checked ~ #sli .pic{
+	margin-left: -100%;
+}
+
+#swi3:checked ~ #sli .pic{
+	margin-left: -200%;
+}
+
+
+
+#contr{ /*положение блока всех управляющих элементов*/
+	margin: -25% 0 0 0;
+	width: 100%;
+	height: 50px;
+}
+
+
+
+
+/*цвет активного лейбла при активации чекбокса*/
+#swi1:checked ~ #active label:nth-child(1),
+#swi2:checked ~ #active label:nth-child(2),
+#swi3:checked ~ #active label:nth-child(3){
+	background: #18a3dd;
+	border-color: #18a3dd !important;
+}
+
+#sli .pic{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+#contr label:hover{ /*прозрачность стрелок при наведении*/
+	opacity: 0.6;
+}
+
+#contr label{ /*прозрачность стрелок при отводе курсора*/
+	transition: opacity 0.2s ease-out;
+}
+
+#slaid10 input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+	display: none;
+}
+
+
+
+
+#toTop {
+ position: fixed; /*позиционирование кнопки фиксированное*/
+ z-index: 9999; /*отображаем поверх всех элементов*/
+ bottom: 0%; /*положение снизу*/
+ right: 90%; /*положение справа*/
+
+
+ color: #fff; /*цвет текста*/
+ padding: 10px; /*внутренние отступы*/
+ margin: 5px 15px 15px 5px; /*внешние отступы*/
+
+
+}
+#toTop:hover {
+ opacity: 1;
+ cursor:pointer;
+}
+
+<div><a href="#top" class="idTop"><img src='.../myimage.png'/>
+</a></div>
+
