@@ -61,7 +61,7 @@ ul {
                  }
 
 ul a{
-    white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+    white-space:nowrap; 
     display:block;
     }
 
