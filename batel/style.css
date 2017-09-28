@@ -112,7 +112,7 @@ ul a{
 
 #header2{
     height:50px;
-    background:url("../../lending/batel/image/logotip.png")no-repeat ;
+    background:url("image/logotip.png")no-repeat ;
     background-position:left 200px center;
     background-color:#ffffff;
     margin-top:70px;
@@ -140,7 +140,7 @@ button{
     position: relative;
     top: 12px;
     right: 165px;
-    background: url("../../lending/batel/image/search.png") no-repeat 3px -1px ;
+    background: url("image/search.png") no-repeat 3px -1px ;
     cursor: pointer;
     border-bottom:none;
        }
@@ -160,7 +160,7 @@ button{
     padding-left: 2rem;
 	margin-left:690px;
     font-size: 17px;
-    background: url("../../lending/batel/image/support.png")  left top -1px no-repeat;
+    background: url("image/support.png")  left top -1px no-repeat;
     z-index:10;
 	    }
 
@@ -276,14 +276,14 @@ button{
 
 #slaid1 {
     background-repeat: no-repeat ;
-    background-image: url("../../lending/batel/image/1.png");
+    background-image: url("image/1.png");
     background-attachment: scroll;
     background-position: top 0px center;
 	height:690px;
         }
 
 #slaid2 {
-    background-image:url("../../lending/batel/image/2.png");
+    background-image:url("image/2.png");
     background-position:  center;
     margin-bottom:0px;
     margin-top: -30px;
@@ -292,7 +292,7 @@ button{
         }
 
 #slaid3 {
-    background-image:url("../../lending/batel/image/4.png");
+    background-image:url("image/4.png");
     background-position:  center;
     height: 541px;
     width:100%;
@@ -321,7 +321,7 @@ button{
                }
 
 #slaid4 {
-    background-image:url("../../lending/batel/image/5.png");
+    background-image:url("image/5.png");
     background-size:auto;
     background-position:  center;
     height: 420px;
@@ -356,7 +356,7 @@ button{
 	top:0;
 	overflow:hidden;
 	text-indent:-999px;
-	background:url("../../lending/batel/image/6/left.png") left center no-repeat;
+	background:url("image/6/left.png") left center no-repeat;
 	opacity:0.8;
 	z-index:3;
 	outline:none !important;}
@@ -368,7 +368,7 @@ button{
 		width:69px;
 	margin-top:-85px;
 	left:887px;
-	background:url("../../lending/batel/image/6/right.png") right center no-repeat;}
+	background:url("image/6/right.png") right center no-repeat;}
 
 
 #prewbutton:hover, #nextbutton:hover{
@@ -385,7 +385,7 @@ button{
 
 
 #slaid6 {
-    background-image:url("../../lending/batel/image/6.png");
+    background-image:url("image/6.png");
     background-size:auto;
     background-position:  center;
     height: 370px;
@@ -395,7 +395,7 @@ button{
         }
 
 #slaid7{
-	background-image: url("../../lending/batel/image/8/8.png");
+	background-image: url("image/8/8.png");
 	background-size:auto;
     background-position:  center;
     height: 900px;
@@ -427,7 +427,7 @@ margin-top:255px;
 	top:0;
 	overflow:hidden;
 	text-indent:-999px;
-	background:url("../../lending/batel/image/8/left.png") left center no-repeat;
+	background:url("image/8/left.png") left center no-repeat;
 	opacity:0.8;
 	z-index:3;
 	outline:none !important;}
@@ -439,7 +439,7 @@ margin-top:255px;
 	margin-top:170px;
 	width:69px;
 		left:892px;
-	background:url("../../lending/batel/image/8/right.png") right center no-repeat;}
+	background:url("image/8/right.png") right center no-repeat;}
 
 
 
@@ -447,7 +447,7 @@ margin-top:255px;
 
 
 #slaid8 {
-    background-image:url("../../lending/batel/image/8.png");
+    background-image:url("image/8.png");
     background-size:auto;
     background-position:  center;
     height: 832px;
@@ -481,7 +481,7 @@ margin-top:255px;
 	margin-top:-10px;
     display: none;
     height: 580px;
-    background-image: url("../../lending/batel/image/privilege.png");
+    background-image: url("image/privilege.png");
     background-position-x: center;
     background-repeat: no-repeat;
     width: 100%;
